@@ -3,7 +3,7 @@ import random
 from PIL import Image
 
 # Load board image (make sure "board.png" is in the same folder as app.py)
-board_img = Image.open("board.png")
+board_img = Image.open("41a30364-49a2-44af-a12a-3796c5e44d6b.png")
 
 class SnakeAndLadder:
     def __init__(self):
