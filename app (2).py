@@ -2,7 +2,6 @@ import streamlit as st
 import random
 from PIL import Image
 
-# Load board image (make sure "board.png" is in the same folder as app.py)
 board_img = Image.open("41a30364-49a2-44af-a12a-3796c5e44d6b.png")
 
 class SnakeAndLadder:
@@ -19,12 +18,9 @@ class SnakeAndLadder:
     def roll_dice(self):
         return random.randint(1, 6)
 
-
-# --- Streamlit App ---
-st.title("🎲 Snake and Ladder Game")
+st.title("Snake and Ladder Game")
 st.image(board_img, caption="Snake and Ladder Board", use_container_width=True)
 
-# Initialize session state
 if "players" not in st.session_state:
     st.session_state.players = {}
 if "turn" not in st.session_state:
@@ -36,8 +32,6 @@ if "winner" not in st.session_state:
 if "log" not in st.session_state:
     st.session_state.log = []
 
-
-# Setup players
 if not st.session_state.players:
     st.sidebar.header("Setup Game")
     num_players = st.sidebar.number_input("Enter number of players (1-4)", 1, 4, 2)
@@ -55,8 +49,7 @@ if not st.session_state.players:
         st.rerun()
 
 else:
-    # Show current game log
-    st.subheader("📜 Game Log")
+    st.subheader("Game Log")
     st.text("\n".join(st.session_state.log))
 
     players = list(st.session_state.players.keys())
@@ -105,8 +98,7 @@ else:
         st.success(f"🏆 {st.session_state.winner} wins the game!")
         st.balloons()
 
-# Reset button
-if st.button("🔄 Restart Game"):
+if st.button("Restart Game"):
     st.session_state.players = {}
     st.session_state.turn = 0
     st.session_state.winner = None
