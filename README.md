@@ -12,6 +12,7 @@ This is a digital version of the classic **Snake and Ladder** board game where 1
 ## 🔗 Live Demo
 You can play the game online here:  
 [Snake and Ladder Game](https://snake-and-ladder-dhrllmmwowdm55i8exxjwm.streamlit.app/)
+https://snake-and-ladder-dhrllmmwowdm55i8exxjwm.streamlit.app/
 
 ---
 
