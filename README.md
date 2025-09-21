@@ -24,7 +24,3 @@ https://snake-and-ladder-dhrllmmwowdm55i8exxjwm.streamlit.app/
 - Automatic snake and ladder movement.
 - Displays current positions of all players.
 - Simple and intuitive web interface using Streamlit.
-
----
-git clone https://github.com/aradhyagh/snake-and-ladder.git
-cd snake-and-ladder
